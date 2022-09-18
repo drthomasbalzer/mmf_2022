@@ -62,7 +62,7 @@ def exponential_histogram(_lambda, sz):
     num_bins = 50
 
     # the histogram of the data
-    n, bins, _hist = plt.hist(sample, num_bins, normed=True, facecolor='green', alpha=0.75)
+    n, bins, _hist = plt.hist(sample, num_bins, density=True, facecolor='green', alpha=0.75)
 
     plt.xlabel('Outcome')
     plt.ylabel('Rel. Occurrence')
@@ -127,7 +127,7 @@ def simulated_default_time(times, lambdas, sz):
     num_bins = 50
 
     plt.subplot(2, 1, 1)
-    n, bins, _hist = plt.hist(sampled_default_time, num_bins, normed=True, facecolor='green', alpha=0.75)
+    n, bins, _hist = plt.hist(sampled_default_time, num_bins, density=True, facecolor='green', alpha=0.75)
 
     plt.xlabel('Outcome')
     plt.ylabel('Rel. Occurrence')
@@ -158,9 +158,9 @@ if __name__ == '__main__':
     hr =  [0.01, 0.01, 0.025, 0.05, 0.075, 0.1, 0.125]
     # hr =  [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
     # hr =  [0.01, 0.025, 0.05, 0.075, 0.1, 0.125]
-    # simulated_default_time(times, hr, size)
+    #simulate_default_time(times, hr, size)
 
-    calc_type = 3
+    calc_type = 0
 
     if (calc_type == 0):  ### uniform sample
         uniform_histogram(size)
