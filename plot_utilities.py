@@ -46,7 +46,7 @@ class PlotUtilities():
 
     def plotHistogram(self, sample_data, num_bins, labels = 'None', _alpha = 1.):
 
-        plt.hist(sample_data, num_bins, normed=True, label=labels, alpha=_alpha)
+        plt.hist(sample_data, num_bins, density=True, label=labels, alpha=_alpha)
 
         plt.xlabel(self.x_label)
         plt.ylabel(self.y_label)
