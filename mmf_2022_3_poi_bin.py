@@ -45,8 +45,8 @@ def binomial_plot(p, n):
 
 if __name__ == '__main__':
 
-    binomial_plot(0.2, 50)
-    poisson_plot(0.5, 10)
+    # binomial_plot(0.2, 50)
+    # poisson_plot(0.5, 10)
     comparison_poi_binom(0.5,10)
 
 

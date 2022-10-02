@@ -32,6 +32,6 @@ if __name__ == '__main__':
     mu = 0
     sigma_sq = 2.5
 #    rho = -0.9
-    rho = [-0.9, 0., 0.9]
+    rho = [-0.95, 0., 0.95]
     bivariate_normal_scatter(mu, mu, sigma_sq, sigma_sq, rho)
 

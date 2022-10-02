@@ -113,9 +113,9 @@ class PlotUtilities():
             # the histogram of the data
             _thisAlpha = base_alpha + 0.10 * float(k)
             if (colors == 'None'):
-                plt.hist(samples[k], num_bins, normed=True, facecolor='blue', alpha=_thisAlpha)
+                plt.hist(samples[k], num_bins, density=True, facecolor='blue', alpha=_thisAlpha)
             else:
-                plt.hist(samples[k], num_bins, normed=True, facecolor=colors[k], alpha=_thisAlpha)
+                plt.hist(samples[k], num_bins, density=True, facecolor=colors[k], alpha=_thisAlpha)
 
         plt.xlabel(self.x_label)
         plt.ylabel(self.y_label)

@@ -90,7 +90,7 @@ def binomial_clt_hist(sample_size, repeats, p):
     plt.ylabel('Relative Occurrence')
     plt.title("Histogram of Normalised Binomial Average For Sample of Size={0}".format(sample_size))
 
-    _n, bins, _hist = plt.hist(sample_value, num_bins, normed=True, facecolor='green', alpha=0.75)
+    _n, bins, _hist = plt.hist(sample_value, num_bins, density=True, facecolor='green', alpha=0.75)
 
     y = [dist.standard_normal_pdf(b) for b in bins]
     plt.plot(bins, y, 'r--')

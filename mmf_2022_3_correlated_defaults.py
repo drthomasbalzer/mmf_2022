@@ -171,25 +171,25 @@ if __name__ == '__main__':
 
     size = 100
 
-    rhos = [0.05, 0.1, 0.2, 0.5, 0.75]
-    # -- portfolio loss distribution for finite case
-    p = 0.05
+    # rhos = [0.05, 0.1, 0.2, 0.5, 0.75]
+    # # -- portfolio loss distribution for finite case
+    # p = 0.05
     # portfolio_loss_histogram(rhos[2], p, 100, True)
-    #
-    # # -- portfolio loss distribution for LHP case
+    # #
+    # # # -- portfolio loss distribution for LHP case
     # plotVasicekDistribution(rhos, p, 0., 0.25, 500)
     #
-    # # -- demo of simple correlated defaults with different correlations
-    # lambda_1 = 0.25
-    # lambda_2 = 0.5
-    # rhos = [0.95, 0.5, 0., -0.5, -0.95]
-    # correlated_defaults_scatter(lambda_1, lambda_2, rhos, size)
+    # -- demo of simple correlated defaults with different correlations
+    lambda_1 = 0.25
+    lambda_2 = 0.5
+    rhos = [0.95, 0.5, 0., -0.5, -0.95]
+    correlated_defaults_scatter(lambda_1, lambda_2, rhos, size)
 
 
-    mean = 100
-    variance = 0.2 * 0.2
-    pd = 0.10
-    pd_vol = 2.0
-    strike = 105
-    df = 1.0
+    # mean = 100
+    # variance = 0.2 * 0.2
+    # pd = 0.10
+    # pd_vol = 2.0
+    # strike = 105
+    # df = 1.0
     # example_bivariate_option_price_mc(mean, variance, pd, pd_vol, strike, df)
